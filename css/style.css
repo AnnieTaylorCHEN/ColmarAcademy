@@ -72,28 +72,58 @@ nav span {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Mobile header*/
+@media only screen and (max-width: 720px) {
+    
+    header .logo, nav {
+        display: none;
+    }
+
+    header .mobilenav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        background-color: white;
+    }
+
+    .mobilenav img{
+        height: 60px;
+        }
+
+    }
+
 /*3. Banner Section 1*/
 .section1 {
     display: flex;
-    flex-direction: row;
-    padding: 32px 24px;
+    justify-content: space-between;
     background-color: #d8d8d8;
+    margin: 0 auto;
 }
 
 .column1 {
     width: 60%;
+    padding: 32px 24px;
+}
 
+.column1 img{
+    width: 100%;
 }
 
 .column2 {
-    width: 40%;
-    padding: 150px 100px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    margin-right: 200px;
 }
 
 .column2 p{
     font-size: 2rem;
     font-style: bold;
-    }
+}
 
 .button {
     color: white;
@@ -105,6 +135,26 @@ nav span {
 
 .button:hover{
     background-color: #4a90e2;
+}
+
+/* Mobile Section 1 */
+@media only screen and (max-width: 720px) {
+    
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .column1 {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .column2 {
+        justify-items: center;
+        margin-left: 200px;
+    }
 }
 
 /*4. Information section 2*/
@@ -123,15 +173,16 @@ nav span {
 }
 
 .column3 {
-    width: 40%;
+    width: 700px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
+
 
 .info {
     display: flex;
     flex-direction: row;
-    height: 33%;
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 1.2rem;
     font-weight: 500rem;
@@ -144,7 +195,6 @@ nav span {
 }
 
 .infotext {
-   width: 60%;
    line-height: 2rem;
    padding: 40px 24px;
    
@@ -152,6 +202,33 @@ nav span {
 
 .info a{
     color: #4a90e2;
+}
+
+.info:hover {
+    background-color: #d8d8d8;
+}
+
+/* Mobile Section 2*/
+@media only screen and (max-width: 720px) {
+
+    .section2 .column1 {
+        display: none;
+    }
+
+    .section2 .column3 .info img{
+        display: none;
+    }
+
+    .column3 .mobileimg {
+        width: 100%;
+        height: auto;
+    }
+    
+    .infotext{
+        width: 100%;
+        padding: 30px;
+    }
+
 }
 
 /* 5. Section 3 */
@@ -176,6 +253,7 @@ nav span {
 .item {
     height: auto;
     background-color: white;
+    transition: all .2s ease-in-out;
 }
 
 .itemtext {
@@ -190,11 +268,44 @@ nav span {
     color: #4a4a4a;
 }
 
+.item:hover {
+    transform: scale(1.2);
+    box-shadow: 24px 21px 74px 0px rgba(0,0,0,0.75);
+}
+
+/*Mobile Section 3*/
+@media only screen and (max-width: 720px) {
+   
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        background-color: white;
+    }
+    
+    .section3 .wrapper {
+        display: none;
+    }
+
+    .column3 {
+        width: 100%;
+    }
+
+    .section3 .mobilecourse h3{
+        background-color: #d8d8d8;
+        padding: 60px 24px;
+    }
+
+    
+
+}
+
 /* 6. Section 4 */
 
 .section4 h2{
     text-align: center;
-    padding: 60px;
+    padding: 30px;
 }
 
 .section4wrapper {
@@ -202,14 +313,39 @@ nav span {
     padding: 50px;
 }
 
-.column1 p{
+.section4wrapper .column1 p{
     padding-right: 70px;
 }
 
+.section4wrapper video {
+    width: 100%;
+}
+
 .column4 {
-    width: 40%;
+    width: 700px;
     display: flex;
     flex-direction: column;
+}
+
+/* Mobile Section 4 */
+@media only screen and (max-width: 720px) {
+
+    .section4 .column4 {
+        display: none;
+    }
+
+    .section4wrapper .column1 h3{
+        display: none;
+    }
+
+    .section4wrapper .column1 p {
+        display: none;
+    }
+
+    .section4wrapper video {
+        width: 100%;
+    }
+
 }
 
 /* 7. Footer */
@@ -221,14 +357,24 @@ footer {
 
 
 footer p {
-    flex-grow: 1; 
+    flex-grow: 1;
+}
+
+/* Mobile Footer */
+@media only screen and (max-width: 720px) {
+  
+    /* Mobile Footer */
+    footer nav {
+        display: none;
+    }
+
 }
 
 
-/*Mobile setting*/
-@media only screen and (min-width:480px) {
+/*Mobile setting not displayed on bigger screen*/
+@media only screen and (min-width:720px) {
 
-    header .mobilenav {
+    .mobilenav {
         display: none;
     }
 
@@ -241,89 +387,5 @@ footer p {
     }
 }
 
-
-@media only screen and (max-width: 480px) {
-    /*Mobile header*/
-    header .logo, nav {
-        display: none;
-    }
-
-    header .mobilenav{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-items: center;
-        height: 100px;
-        width: 100%;
-        background-color: white;
-    }
-
-    .mobilenav img{
-        height: 60px;
-        padding: 20px 100px;
-    }
-    
-    /*Mobile section 1 */
-    .section1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        padding: 0px;
-        background-color: #d8d8d8;
-    }
-
-    
-    .column1 {
-        width: 100%;
-    }
-
-    .column2 {
-        width: 320px;
-        background-color: #d8d8d8;
-        padding: 80px 400px;
-    }
-    
-    /*Mobile Section 2 */
-    .section2 .column1 {
-        display: none;
-    }
-
-    .section2 .column3 .info img{
-        display: none;
-    }
-
-    .column3 .mobileimg {
-        width: auto;
-        max-width: 100%;
-        height: auto;
-        padding: 0px 300px;
-    }
-    .info {
-        width: 600px;
-        padding: 10px 300px;
-    }
-
-    /* Mobile Section 3 */
-    .section3 {
-        display: grid;
-        grid-template-rows: repeat(7, 1fr);
-        grid-row-gap: 10px;
-        align-content: center;
-        width: 100%;
-        height: auto;
-        background-color: white;
-    }
-    
-    .section3 .wrapper {
-        display: none;
-    }
-
-    .section3 .mobilecourse{
-        background-color: #d8d8d8;
-        padding: 16px 24px;
-    }
-
-}
 
 
