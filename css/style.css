@@ -59,7 +59,7 @@ header .container {
 }
 
 .logo img {
-    height: 60px;
+    height: 55px;
 }
 
 .logo b {
@@ -73,34 +73,28 @@ header .container {
 }
 
 /*Mobile header*/
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 480px) {
     
-    header .logo, .desktopnav {
+    .logo, .desktopnav {
         display: none;
     }
-
-    header .container{
-        margin: 0px;
-    }
-
-    header .mobilenav{
+    
+    nav .mobilenav {
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        height: 100px;
-        margin: 0px;
-        background-color: white;
+        align-content: center;
     }
 
-    .mobilenav img{
-        height: 60px;
-        }
-
+    .mobilenav img {
+        padding:0px 25px;
     }
+
+}
 
 /*3. Banner Section 1*/
-.section1 {
+.section1 .container{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     background-color: #d8d8d8;
     margin: auto;
@@ -141,28 +135,34 @@ header .container {
 }
 
 /* Mobile Section 1 */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 480px) {
     
     .section1 .container{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
     }
 
-   .column1 {
+    .section1 .container {
+        width: 100%;
+    }
+
+
+    .section1 .column1 {
         width: 100%;
         padding: 0px;
     }
 
     .column2 {
-        justify-items: center;
-
+        width: 80%;
     }
+
 }
 
 /*4. Information section 2*/
 
-.section2 {
+.section2 .container {
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -212,25 +212,41 @@ header .container {
 }
 
 /* Mobile Section 2*/
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 480px) {
 
     .section2 .column1 {
         display: none;
     }
 
-    .section2 .column3 .info img{
+    .info img{
         display: none;
     }
 
-    .column3 .mobileimg {
+    .section2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px;
         width: 100%;
-        height: auto;
+    }
+
+    
+    .mobileimg img{
+        width: 100%;
+    
+    }
+
+    .infotext {
+        width: 100%;
+        padding: 10px;
     }
     
-    .infotext{
-        width: 100%;
-        padding: 30px;
-    }
 
 }
 
@@ -302,7 +318,7 @@ header .container {
 
     .section3 .mobilecourse h3{
         background-color: #d8d8d8;
-        padding: 60px 24px;
+        padding: 40px 24px;
     }
 
     
@@ -336,7 +352,7 @@ header .container {
 }
 
 /* Mobile Section 4 */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 480px) {
 
     .section4 .column4 {
         display: none;
@@ -350,8 +366,20 @@ header .container {
         display: none;
     }
 
-    .section4wrapper video {
+    .section4 .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
+    }
+
+    .section4wrapper {
+        padding: 0px;
+    }
+
+    .section4wrapper .column1{
+        width: 100%;
+        padding: 0px;
     }
 
 }
@@ -370,7 +398,7 @@ footer p {
 }
 
 /* Mobile Footer */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 480px) {
   
     /* Mobile Footer */
     footer nav {
@@ -381,7 +409,7 @@ footer p {
 
 
 /*Mobile setting not displayed on bigger screen*/
-@media only screen and (min-width:720px) {
+@media only screen and (min-width: 480px) {
 
     .mobilenav {
         display: none;
