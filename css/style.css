@@ -25,23 +25,27 @@ a:hover{
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 
 h3 {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
 /*2.Header*/
-header {
+header .container {
     display: flex;
-    align-items: center;
+    align-content: center;
+    justify-content: space-between;
     height: 70px;
-    width: 100%;
     background-color: white;
-    margin-top: 0px;
 }
 
 .logo {
@@ -62,21 +66,21 @@ header {
     color:#4a4a4a;
 }
 
-nav {
-    margin-right: 24px;
-}
-
-nav span {
+.desktopnav a{
     display: inline-block;
-    padding-right: 1rem;
+    padding: 1rem 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Mobile header*/
 @media only screen and (max-width: 720px) {
     
-    header .logo, nav {
+    header .logo, .desktopnav {
         display: none;
+    }
+
+    header .container{
+        margin: 0px;
     }
 
     header .mobilenav{
@@ -84,7 +88,7 @@ nav span {
         justify-content: space-around;
         align-items: center;
         height: 100px;
-        width: 100%;
+        margin: 0px;
         background-color: white;
     }
 
@@ -99,7 +103,7 @@ nav span {
     display: flex;
     justify-content: space-between;
     background-color: #d8d8d8;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .column1 {
@@ -112,23 +116,22 @@ nav span {
 }
 
 .column2 {
-    width: 400px;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px;
-    margin-right: 200px;
+    padding: 0px 24px;
 }
 
 .column2 p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: bold;
 }
 
 .button {
     color: white;
     background-color: #4a4a4a;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
     transition: 100ms 500ms background-color ease-in-out;
 }
@@ -140,7 +143,7 @@ nav span {
 /* Mobile Section 1 */
 @media only screen and (max-width: 720px) {
     
-    .section1 {
+    .section1 .container{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -153,7 +156,7 @@ nav span {
 
     .column2 {
         justify-items: center;
-        margin-left: 200px;
+
     }
 }
 
@@ -162,21 +165,20 @@ nav span {
 .section2 {
     display: flex;
     flex-direction: row;
-    padding: 32px 24px;
     background-color: white;
 }
 
-
 .column1 p{
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
 }
 
 .column3 {
-    width: 700px;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    justify-content: flex-start;
+    margin: 0px;
+    padding-top: 24px;
 }
 
 
@@ -184,19 +186,18 @@ nav span {
     display: flex;
     flex-direction: row;
     font-family: "Montserrat", Arial, sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500rem;
+    font-weight: 500;
 }
 
 .info img {
-    width: 40%;
-    height: auto;
-    padding: 25px;
+    width: 35%;
+    height: 100%;
+    padding: 15px;
 }
 
 .infotext {
-   line-height: 2rem;
-   padding: 40px 24px;
+   line-height: 1.5rem;
+   padding: 10px;
    
 }
 
@@ -242,26 +243,31 @@ nav span {
     padding-top: 60px;
 }
 
-.wrapper{
-    padding: 40px 150px; 
+.container .wrapper {
+    padding: 5px; 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    grid-gap: 30px 45px;
+    grid-gap: 30px 40px;
+    padding: 50px 72px;
 }
 
 .item {
-    height: auto;
+    height: 100%;
     background-color: white;
     transition: all .2s ease-in-out;
 }
 
+.item img{
+    width: 100%;
+    height: auto;
+}
+
 .itemtext {
     font-family: "Montserrat", Arial, sans-serif;
-    font-size: 1.4rem;
-    line-height: 2.5rem;
+    font-size: 1.2rem;
     color: #818181;
-    padding: 20px 40px;
+    padding: 10px 20px;
 }
 
 .itemtext h3 {
@@ -349,8 +355,9 @@ nav span {
 }
 
 /* 7. Footer */
-footer {
+footer .container {
     display: flex;
+    justify-items: space-between;
     padding: 16px 24px;
     border-top: 2px solid #d8d8d8;
 }
