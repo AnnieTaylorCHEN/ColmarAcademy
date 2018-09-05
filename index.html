@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Colmar Academy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    
 </head>
 
 <body>
     
     <!--header-->
-    <header>
-        <div class="container">
+    <header class="container">
+        
         <div class="logo">
-        <img src="images/ic-logo.svg" title="Colmar Academy" alt="Colmar Academy School Logo"> 
-        <span><b>COLMAR</b>ACADEMY</span>
+          <img src="images/ic-logo.svg" title="Colmar Academy" alt="Colmar Academy School Logo"> 
+          <span><b>COLMAR</b>ACADEMY</span>
         </div>
 
         <nav class="desktopnav">
@@ -33,14 +35,12 @@
             <a href="#"><img src="images/ic-login.svg" title="Colmar Academy Login" alt="Colmar Academy School Login"></a>
         </nav>
 
-        </div>
         
     </header>
 
     <!--Banner Section 1-->
-    <section>
-        <div class="section1">
-            <div class="container">
+    <section class="section1">
+        <div class="container">
             <div class="column1">
                 <img src="images/banner.jpg" title="Banner image" alt="Banner image showing students studying">
             </div>
@@ -50,35 +50,25 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 <p class="button">Start here</p>
             </div>
-            </div>
         </div>
     </section>  
 
-   <!--Section 2-->
-   <section>
-       <div class="section2">
-           <div class="container">
+   <!--Information Section 2-->
+   <section class="section2 container">
+    
            <div class="column1">
                <img src="images/information-main.jpg" title="Information image" alt="A black male student reading a book.">
                <h2>It doesn't hurt to keep practising</h2>
                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices sapien quis augue imperdiet, non rutrum sapien scelerisque. Suspendisse eu orci lorem. Etiam vestibulum aliquet est a molestie. Cras luctus massa lectus."</p>
-               &nbsp;
-               &nbsp;
-               &nbsp;
-               &nbsp;
-               &nbsp;
                <p><b>Emanuel Sr Stategist at Hiring.com</b></p>
            </div>
 
            <div class="column3">
-
-                <div class="mobileimg">
-                        <img src="images/information-orientation-mobile.jpg" title="Information Orientation" alt="A group of people walking with shadow on the ground.">
-                       </div>
+                <img src="images/information-orientation-mobile.jpg" class="mobileimg" title="Information Orientation" alt="A group of people walking with shadow on the ground.">
 
                <div class="info">
-
-                   <img src="images/information-orientation.jpg" title="Information Orientation" alt="A group of people walking with shadow on the ground." width ="480" height="auto">
+                   
+                   <img src="images/information-orientation.jpg"  title="Information Orientation" alt="A group of people walking with shadow on the ground." width ="" height="auto">
 
                    <div class="infotext">
                    <h3><b>Orientation Date</b></h3>
@@ -87,9 +77,9 @@
                    </div>
                 </div>
 
-                <div class="mobileimg">
-                        <img src="images/information-campus-mobile.jpg" title="Information Campus" alt="A room with a map on the wall.">
-                   </div>
+                
+                <img src="images/information-campus-mobile.jpg" class="mobileimg" title="Information Campus" alt="A room with a map on the wall.">
+                   
 
                 <div class="info">
 
@@ -102,9 +92,9 @@
                     </div>
                 </div>
 
-                <div class="mobileimg">
-                        <img src="images/information-guest-lecture-mobile.jpg" title="Information Guest Lecture" alt="Guest lecture Oliver Sack.">
-                        </div>
+                
+                <img src="images/information-guest-lecture-mobile.jpg" class="mobileimg" title="Information Guest Lecture" alt="Guest lecture Oliver Sack.">
+                        
 
                 <div class="info">
 
@@ -118,35 +108,22 @@
                 </div>
                      
              </div>
-             </div>
-       </div>
+            
    </section>
 
-   <!--Section 3-->
-   <section>
-       <div class="section3 container">
+   <!--Courses Section 3-->
+   <section class="section3 container">
+       
            <h2>Starting learning</h2>
-
-           <div class="mobilecourse">
-               <h3>Software engineering</h3>
-           </div>
-
-           <div class="mobilecourse">
-                <h3>Computer Art</h3>
-           </div>
-
-           <div class="mobilecourse">
-                <h3>Design</h3>
-           </div>
-           <div class="mobilecourse">
-                <h3>Data</h3>
-           </div>
-           <div class="mobilecourse">
-                <h3>Business</h3>
-           </div>
-           <div class="mobilecourse">
-                <h3>Marketing</h3>
-           </div>
+        <!--<Mobile courses only-->
+          
+            <h3 class="mobilecourse">Software engineering</h3>
+            <h3 class="mobilecourse">Computer Art</h3>
+            <h3 class="mobilecourse">Design</h3>
+            <h3 class="mobilecourse">Data</h3>
+            <h3 class="mobilecourse">Business</h3>
+            <h3 class="mobilecourse">Marketing</h3>
+           
 
         <div class="wrapper">
 
@@ -228,64 +205,57 @@
     
             </div>
 
-        </div>
-
-       </div>
-
    </section>
 
-   <!--Section 4-->
-   <section>
-       <div class="section4">
-        <div class="container">
+   <!--Thesis Section 4-->
+   <section class="section4 container">
 
-          <h2>Thesis Exhibit</h2>
+        <h2>Thesis Exhibit</h2>
 
-          <div class="section4wrapper">
+        <div class="section4wrapper">
               
             <div class="column1">
-              <video width="1000" height="" controls>
-                  <source src="videos/thesis.mp4" type="video/mp4">
+                <video width="" height="" controls>
+                <source src="videos/thesis.mp4" type="video/mp4">
                     Your browser doesn't support video tag.
-              </video>
+                </video>
 
-              <h3>Reimaging Urban</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices sapien quis augue imperdiet, non rutrum sapien scelerisque. Suspendisse eu orci lorem. Etiam vestibulum aliquet est a molestie. Cras luctus massa lectus. Donec at lorem sed tellus commodo aliquet quis vitae metus. Donec ut nunc nulla. Vivamus et ornare odio. Nullam ac lorem metus.</p>
+                <h3>Reimaging Urban</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices sapien quis augue imperdiet, non rutrum sapien scelerisque. Suspendisse eu orci lorem. Etiam vestibulum aliquet est a molestie. Cras luctus massa lectus. Donec at lorem sed tellus commodo aliquet quis vitae metus. Donec ut nunc nulla. Vivamus et ornare odio. Nullam ac lorem metus.</p>
             </div>
 
-            <div class="column4">
+            <div class="column3">
 
-                    <div class="info">
-                        <img src="images/thesis-fisma.jpg" title="Fisma Thesis" alt="Drawing draft.">
-                        <div class="infotext">
+                <div class="info">
+                    <img src="images/thesis-fisma.jpg" title="Fisma Thesis" alt="Drawing draft.">
+                    <div class="infotext">
                         <h3>Fisma: Design and Prototype</h3>
                         <p>Designer showcase of new prototype product</p>
-                        </div>
                     </div>
+                </div>
          
-                    <div class="info">
-                        <img src="images/thesis-now-and-then.jpg" title="New York Now and Then" alt="New York skyline.">
-                        <div class="infotext">
+                <div class="info">
+                    <img src="images/thesis-now-and-then.jpg" title="New York Now and Then" alt="New York skyline.">
+                    <div class="infotext">
                         <h3>Now and Then</h3>
                         <p>Research study about New York</p>
-                        </div>
                     </div>
-            </div>        
-            </div>
+                </div>
 
-        </div>
+            </div>       
 
-       </div>
+        </div> 
+
    </section>
 
-   <footer>
-       <div class="container">
-     <p>&copy; 2016 Colmar Academy. All Rights Reserved.</p>
-     <nav>
-        <span>Terms</span>
-        <span>Privacy</span>
-     </nav>
-    </div>
+   <footer class="container">
+
+        <p>&copy; 2016 Colmar Academy. All Rights Reserved.</p>
+        <nav>
+          <span>Terms</span>
+          <span>Privacy</span>
+        </nav>
+
    </footer>
 
 </body>
