@@ -159,8 +159,8 @@ header {
     }
  
     .column2 {
-        width: 80%;
-        padding: 3rem 5rem;
+        width: auto;
+        padding: 2rem 3rem;
     }
 }
 
@@ -345,7 +345,7 @@ header {
     .mobilecourse {
         background-color: #d8d8d8;
         padding: 2rem;
-        margin: 0.5rem 0rem;
+        margin: 0.5rem 1rem;
     }
 
 }
