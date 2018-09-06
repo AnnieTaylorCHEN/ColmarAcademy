@@ -40,8 +40,8 @@ p {
 }
 
 .container {
-    width: 1200px;
-    margin: auto;
+    max-width: 1200px;
+    margin: 0rem auto;
 }
 
 /*2.Header*/
@@ -57,7 +57,6 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    /*flex-grow: 1;*/
     padding: 1rem 0rem 1rem 1.5rem;
     text-transform: uppercase;
     font-size: 2rem;
@@ -89,12 +88,12 @@ header {
     header .container {
         display: flex;
         justify-content: space-around;
-        align-content: center;
+        align-items: center;
         width: 100%;
     }
 
     .mobilenav img {
-        padding: 0.8rem 1.7rem;
+        padding: 0.8rem 1.5rem;
     }
 
 }
@@ -209,9 +208,8 @@ header {
     padding: 0.8rem 1rem;
 }
 
-.info img {
+.desktopimg {
     width: 35%;
-    height: 100%;
 }
 
 .infotext {
@@ -235,7 +233,7 @@ header {
         display: none;
     }
 
-    .info img{
+    .column3 .desktopimg{
         display: none;
     }
 
@@ -250,21 +248,26 @@ header {
 
     .column3 {
         width: 100%;
-        padding: 1rem;
+        padding: 0rem;
+        margin: 0rem;
     }
 
     .mobileimg {
         width: 100%;
+        padding: 1rem;
+        margin: 0rem;
     }
 
     .info {
-        width: 100%;
-        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        margin: 0rem;
     }
 
     .infotext {
         width: 100%;
-        padding: 10px;
     }
     
 
@@ -342,7 +345,7 @@ header {
     .mobilecourse {
         background-color: #d8d8d8;
         padding: 2rem;
-        margin: 0.5rem 1rem;
+        margin: 0.5rem 0rem;
     }
 
 }
@@ -435,5 +438,17 @@ footer p {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .container{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin: 0rem;
+    }
+
+    body {
+        margin: 0rem;
+    }
+}
 
 
